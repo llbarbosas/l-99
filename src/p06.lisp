@@ -1,0 +1,1 @@
+(defun is-palindrome  (word))

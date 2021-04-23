@@ -1,0 +1,1 @@
+(defun encode (lis))
