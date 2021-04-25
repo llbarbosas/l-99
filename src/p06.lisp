@@ -7,7 +7,6 @@
     (let* ((size (length word)) 
             (cstart (char word 0)) 
             (cend (char word (- size 1))))
-        (cond
-            ((string/= cstart cend) nil)
+        (cond ((string/= cstart cend) nil)
             ((<= size 2) (string= cstart cend))
             (t (is-palindrome (subseq word 1 (- size 1))))))))
