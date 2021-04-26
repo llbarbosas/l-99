@@ -1,0 +1,1 @@
+(defun slice (lis j i))
