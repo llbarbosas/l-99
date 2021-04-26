@@ -17,3 +17,20 @@ make test
 ```bash
 git clone -b start-here git@github.com:llbarbosas/l-99.git
 ```
+
+#### Script to create the files
+```
+for f in {1..20}
+do 
+    cat << EOF > "src/p$f""_test.lisp"
+(load "p$f.lisp")
+
+(deftest test-p$f () 
+    )
+
+(test-p$f)
+
+EOF
+    touch "src/p$f.lisp"
+done
+```
