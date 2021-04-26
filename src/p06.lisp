@@ -2,7 +2,7 @@
 ;     (equal word (reverse word)))
 
 (defun is-palindrome (word)
-    (if (or (null word) (= (length word)))
+    (if (or (null word) (<= (length word) 1))
         t
     (let* ((size (length word)) 
             (cstart (char word 0)) 
